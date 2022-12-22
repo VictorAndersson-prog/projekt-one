@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(0, 0%, 95%);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.card-body {
+    max-width: 200px;
+    padding: 50px;
+  }
+
+  .card-body h1 {
+    color: hsl(0, 0%, 95%);
+    padding-bottom: 40px;
+    font-size: 40px;
+    font-family: "Big Shoulders Display";
+  }
+  
+  .card-body p {
+    padding-bottom: 80px;
+    font-size: 13px;
+    line-height: 24px;
+    color: hsla(0, 0%, 100%, 0.75);
+  }
+
+  .card-body button {
+    padding: 14px 28px;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 14px;
+    background-color: hsl(0, 0%, 95%);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  .card-body button:hover {
+    color: hsl(0, 0%, 95%);
+  }
+
+  #btn-one {
+    color: hsl(31, 77%, 52%);
+  }
+  #btn-one:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+  }
+  #btn-two {
+    color: hsl(184, 100%, 22%);
+  }
+  #btn-two:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+  }
+  #btn-three {
+    color: hsl(179, 100%, 13%);
+  }
+  #btn-three:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border: 1px solid hsl(0, 0%, 95%);
+  }
+
+  .sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .suvs {
+    background-color: hsl(184, 100%, 22%);
+  }
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  @media screen and (max-width: 899px){
+        body{
+          padding: 10px 0px;
+    }
+        .container {
+          align-items: flex-start;
+      }
+        .suvs {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+      }
+      .luxury {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 10px;
+      }
+  }
+@media screen and (max-width:599px){
+    .sedan {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .suvs {
+        border-radius: 0px;
+        border-radius: 0px;
+    }
+}
